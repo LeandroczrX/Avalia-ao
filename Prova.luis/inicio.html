@@ -1,0 +1,230 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Grease Food - Cardápio</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link rel="stylesheet" href="./css/style.css">
+</head>
+<body>
+
+    <header class="header-container">
+        <div class="header-content">
+            <img src="./imagens-videos/grease.jpeg" alt="Logo Grease Food" class="logo">
+            <h1>Grease Food</h1>
+            <p class="address">De Saudável a Risco de Obito</p>
+            <span class="status-badge">Seg à Dom - 18:00 às 22:00</span>
+            <p class="address">Bauru - SP</p>
+            <a href="equipe.html" class="btn-equipes">Ver nossa Equipe</a>
+        </div>
+    </header>
+
+    <main class="menu-container">
+        
+        <h2>Nossos Lanches</h2>
+        <div class="menu-grid">
+            
+            <div class="menu-item">
+                <img src="./imagens-videos/X-magrinho.avif" alt="X-magrinho">
+                <div class="item-details">
+                    <h3>X-magrinho</h3>
+                    <p class="item-description">Para quem quer fingir que está na dieta. Pão integral,hambúrguer vegetariano, alface, tomate e maionese .</p>
+                    <div class="item-footer">
+                        <span class="price">R$ 25,00</span>
+                        <button class="add-to-cart-btn"
+        data-nome="X-magrinho"
+        data-preco="25">
+    <i class="fa fa-shopping-cart"></i>
+</button>
+                    </div>
+                </div>
+            </div>
+
+            <div class="menu-item">
+                <img src="./imagens-videos/fat-fit.avif" alt="Fatfit" >
+                <div class="item-details">
+                    <h3>Fatfit</h3>
+                    <p class="item-description">O equilíbrio perfeito nem muito gordo, nem muito fitness. Duplo burger com muito queijo .</p>
+                    <div class="item-footer">
+                        <span class="price">R$ 32,00</span>
+                        <button class="add-to-cart-btn"
+        data-nome="Fatfit"
+        data-preco="32">
+    <i class="fa fa-shopping-cart"></i>
+</button>
+                        
+                    </div>
+                </div>
+            </div>
+
+            <div class="menu-item">
+                <img src="./imagens-videos/X-infarto.avif" alt="X-infarto" >
+                <div class="item-details">
+                    <h3>X-infarto</h3>
+                    <p class="item-description">Um verdadeiro causador de um infarto! muita carne, muito bacon, cheddar, ovo tudo o que tiver direito tem.</p>
+                    <div class="item-footer">
+                        <span class="price">R$ 45,00</span>
+                        <button class="add-to-cart-btn"
+        data-nome="X-infarto"
+        data-preco="45">
+    <i class="fa fa-shopping-cart"></i>
+</button>
+                    </div>
+                </div>
+            </div>
+
+            <div class="menu-item">
+                <img src="./imagens-videos/X-cebola.avif" alt="X-Cebola">
+                <div class="item-details">
+                    <h3>X-Cebola</h3>
+                    <p class="item-description">Para os que amam de cebola. Um lnache com uma montanha de cebola roxa mais anéis de cebola dentro.</p>
+                    <div class="item-footer">
+                        <span class="price">R$ 34,00</span>
+                        <button class="add-to-cart-btn"
+        data-nome="X-Cebola"
+        data-preco="34">
+    <i class="fa fa-shopping-cart"></i>
+</button>
+                    </div>
+                </div>
+            </div>
+
+            <div class="menu-item">
+                <img src="./imagens-videos/X-caloria.avif" alt="X-caloria" >
+                <div class="item-details">
+                    <h3>X-caloria</h3>
+                    <p class="item-description">De magrinho para a obesidade! Hambúrguer feito para fazer voce engordar.</p>
+                    <div class="item-footer">
+                        <span class="price">R$ 37,00</span>
+                        <button class="add-to-cart-btn"
+        data-nome="X-caloria"
+        data-preco="37">
+    <i class="fa fa-shopping-cart"></i>
+</button>
+                    </div>
+                </div>
+            </div>
+
+            
+            <div class="menu-item kids-item">
+    <img src="./imagens-videos/X-gorducho.png" alt="X-gorducho">
+
+    <div class="item-details">
+        <h3>X-gorducho (Kids)</h3>
+
+        <p class="item-description">
+            Um lanche para os pequenos. Acompanha 1 pelúcia com OBESIDADE da sua escolha!
+        </p>
+
+        <div class="Pelucia-escolher">
+            <label>Escolha sua pelúcia:</label>
+
+            <div class="pelucias">
+    <img src="./imagens-videos/Cartman.png" alt="Cartman"
+         data-som="./imagens-videos/somcartman.mp3">
+
+    <img src="./imagens-videos/Patrick.png" alt="Patrick"
+         data-som="./imagens-videos/i-love-you_2.mp3">
+
+    <img src="./imagens-videos/Sonic.png" alt="Sonic"
+         data-som="./imagens-videos/sonic-ring-sound2.mp3">
+</div>
+
+<audio id="audioPelucia"></audio>
+        </div>
+
+        <div class="item-footer">
+            <span class="price">R$ 38,00</span>
+            <button class="add-to-cart-btn"
+        data-nome="X-gorducho (Kids)"
+        data-preco="38">
+    <i class="fa fa-shopping-cart"></i>
+</button>
+        </div>
+    </div>
+</div>
+
+        </div>
+
+        <h2 class="section-title">Porções</h2>
+        <div class="menu-grid">
+            
+            <div class="menu-item">
+                <img src="./imagens-videos/Batata.avif" alt="Batata">
+                <div class="item-details">
+                    <h3>Batata Frita</h3>
+                    <p class="item-description">Porção de batatas fritas artesanais, com bacon e com muito queijo cheadar.</p>
+                    <div class="item-footer">
+                        <span class="price">R$ 22,00</span>
+                        <button class="add-to-cart-btn"
+        data-nome="Batata Frita"
+        data-preco="22">
+    <i class="fa fa-shopping-cart"></i>
+</button>
+                    </div>
+                </div>
+            </div>
+
+            <div class="menu-item">
+                <img src="./imagens-videos/Bolinho.avif" alt="Bolinhos Fritos">
+                <div class="item-details">
+                    <h3>Bolinhos Fritos</h3>
+                    <p class="item-description">Bolinhos fritos recheados com muito queijo e muito presunto.</p>
+                    <div class="item-footer">
+                        <span class="price">R$ 24,00</span>
+                        <button class="add-to-cart-btn"
+        data-nome="Bolinhos Fritos"
+        data-preco="24">
+    <i class="fa fa-shopping-cart"></i>
+</button>
+                    </div>
+                </div>
+            </div>
+
+            <div class="menu-item">
+                <img src="./imagens-videos/Aneis.avif" alt="Anéis de Cebola" >
+                <div class="item-details">
+                    <h3>Anéis de Cebola</h3>
+                    <p class="item-description">Anéis de cebola fritos na hora. Acompanha molho de alho verde.</p>
+                    <div class="item-footer">
+                        <span class="price">R$ 19,00</span>
+                    <button class="add-to-cart-btn"
+        data-nome="Anéis de Cebola"
+        data-preco="19">
+    <i class="fa fa-shopping-cart"></i>
+</button> 
+                    </div>
+                </div>
+            </div>
+
+        </div>
+<h2 class="section-title">Carrinho</h2>
+
+<div id="carrinho">
+    <p>Nenhum item adicionado.</p>
+</div>
+
+<p class="total-carrinho">
+    Total: R$ <span id="total">0</span>
+</p>
+        <div class="feedback-container">
+    <p class="feedback-texto">Olha so o feedback da Nutri Gigi</p>
+
+    <div class="card-video">
+        <video controls>
+            <source src="./imagens-videos/video_gigi.mp4" type="video/mp4">
+            
+        </video>
+    </div>
+</div>
+
+</section>
+    </main>
+<audio id="somCarrinho">
+    <source src="./imagens-videos/pedido.mp3" type="audio/mpeg">
+</audio>
+ <script src="script.js"></script>
+    </body>
+   
+</html>

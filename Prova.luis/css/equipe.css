@@ -1,0 +1,112 @@
+:root {
+    --color-white: #FFFFFF;
+    --color-bg: #F6F7F8;
+    --color-black: #000000;
+    --color-red: #FF3131;
+    --color-green: #54CC0A;
+    --color-text-dark: #1c1c1c;
+    --color-text-muted: #666666;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+body {
+    background: #111;
+}
+
+.titulo-equipe {
+    text-align: center;
+    font-size: 42px;
+    margin-top: 50px;
+    text-transform: uppercase;
+}
+
+.subtitulo-equipe {
+    text-align: center;
+    color: #ccc;
+    margin-bottom: 40px;
+}
+
+.equipe {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 25px;
+    padding: 60px 20px;
+}
+
+.card-membro {
+    width: 250px;
+    background: #1b1b1b;
+    border: 2px solid #ffffff;
+    border-radius: 15px;
+    padding: 20px;
+    text-align: center;
+    color: white;
+    transition: 0.3s;
+    box-shadow: 0 0 15px rgba(255,49,49,.2);
+
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.card-membro:hover {
+    transform: translateY(-8px);
+    box-shadow: 0 0 25px rgba(255, 242, 61, 0.945);
+}
+
+.card-membro img {
+    width: 130px;
+    height: 130px;
+    object-fit: cover;
+    border-radius: 50%;
+    border: 3px solid #000000;
+    margin-bottom: 15px;
+}
+
+.card-membro h3 {
+    color: #ffffff;
+    margin-bottom: 8px;
+}
+
+.card-membro span {
+    color: #FFD700;
+    font-weight: bold;
+    display: block;
+    margin-bottom: 15px;
+}
+
+.card-membro p {
+    color: #ddd;
+    font-size: 14px;
+    line-height: 1.5;
+}
+
+.btn-inicio {
+    display: inline-flex;
+    align-items: center;
+    gap: 10px;
+    padding: 12px 24px;
+    background-color: #54CC0A;
+    color: white;
+    text-decoration: none;
+    border-radius: 8px;
+    font-weight: bold;
+    transition: 0.3s;
+}
+
+.btn-inicio img {
+    width: 24px;
+    height: 24px;
+}
+
+.btn-inicio:hover {
+    background-color: #ffffff;
+    transform: scale(1.05);
+}

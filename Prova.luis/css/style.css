@@ -1,0 +1,283 @@
+/* Reset Geral */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+body {
+    background-color: #F6F7F8;
+    color: #1c1c1c;
+}
+
+/* HEADER */
+.header-container {
+    background: linear-gradient(rgba(0, 0, 0, 0.75), rgba(0, 0, 0, 0.75)), url('../imagens-videos/banner.png');
+    background-size: cover;
+    background-position: center;
+    padding: 50px 20px;
+    text-align: center;
+    color: #FFFFFF;
+}
+
+.logo {
+    width: 120px;
+    height: 120px;
+    border-radius: 50%;
+    object-fit: cover;
+    border: 3px solid white;
+    margin-bottom: 15px;
+    box-shadow: 0 4px 10px rgba(0,0,0,0.4);
+}
+
+.logo-placeholder {
+    width: 80px;
+    height: 80px;
+    background-color: #FF3131;
+    color: #FFFFFF;
+    font-size: 28px;
+    font-weight: bold;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 50%;
+    margin: 0 auto 15px auto;
+    border: 3px solid #dddddd;
+    box-shadow: 0 4px 10px rgba(0,0,0,0.3);
+}
+
+.header-content h1 {
+    font-size: 32px;
+    font-weight: 700;
+    letter-spacing: 1px;
+    margin-bottom: 5px;
+}
+
+.address {
+    font-size: 14px;
+    color: #dddddd;
+    margin-bottom: 15px;
+}
+
+.status-badge {
+    background-color:#54CC0A;
+    color: var(--color-white);
+    padding: 8px 20px;
+    border-radius: 20px;
+    font-size: 13px;
+    font-weight: 600;
+    display: inline-block;
+}
+
+/* CONTEÚDO DO CARDÁPIO */
+.menu-container {
+    max-width: 1024px;
+    margin: 0 auto;
+    padding: 40px 20px;
+}
+
+.menu-container h2 {
+    font-size: 24px;
+    margin: 20px 0 25px 0;
+    color: #1c1c1c;
+    position: relative;
+    padding-bottom: 8px;
+}
+
+.section-title {
+    margin-top: 50px !important;
+}
+
+/* Grid de Itens */
+.menu-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(400px, 1fr));
+    gap: 25px;
+}
+
+@media (max-width: 480px) {
+    .menu-grid {
+        grid-template-columns: 1fr;
+    }
+}
+
+/* Card de Lanche */
+.menu-item {
+    background-color: #FFFFFF;
+    border-radius: 12px;
+    padding: 15px;
+    display: flex;
+    gap: 15px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.02);
+    transition: transform 0.2s, box-shadow 0.2s;
+}
+
+.menu-item:hover {
+    transform: translateY(-3px);
+    box-shadow: 0 6px 12px rgba(0, 0, 0, 0.05);
+}
+
+.menu-item img {
+    width: 120px;
+    height: 120px;
+    border-radius: 8px;
+    object-fit: cover;
+    flex-shrink: 0;
+}
+
+.item-details {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    flex: 1;
+}
+
+.item-details h3 {
+    font-size: 16px;
+    color: #000000;
+}
+
+.item-description {
+    font-size: 12px;
+    color: #666666;
+    line-height: 1.4;
+    margin: 4px 0;
+}
+
+/* Pelúcias */
+.Pelucia-escolher {
+    margin: 5px 0;
+    font-size: 12px;
+}
+
+.toy-selector label {
+    font-weight: 600;
+    color: #1c1c1c;
+    margin-right: 5px;
+}
+
+.toy-selector select {
+    padding: 3px 8px;
+    border: 1px solid #cccccc;
+    border-radius: 4px;
+    background-color: #F6F7F8;
+    font-size: 12px;
+    cursor: pointer;
+}
+
+.item-footer {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.price {
+    font-weight: 700;
+    font-size: 16px;
+    color: #000000;
+}
+
+/* Botão Carrinho */
+.add-to-cart-btn {
+    background-color: #000000;
+    color: #FFFFFF;
+    border: none;
+    padding: 8px 12px;
+    border-radius: 6px;
+    cursor: pointer;
+    transition: background-color 0.2s;
+}
+
+.add-to-cart-btn:hover {
+    background-color: #FF3131;
+}
+
+.kids-item {
+    border-left: 4px solid #FF3131;
+}
+
+.toy-preview {
+    margin-top: 10px;
+}
+
+.toy-preview img {
+    width: 100px;
+    height: 100px;
+    object-fit: contain;
+    border-radius: 10px;
+    padding: 5px;
+}
+
+.pelucias {
+    display: flex;
+    gap: 10px;
+    margin-top: 10px;
+}
+
+.pelucias img {
+    width: 70px;
+    height: 70px;
+    object-fit: contain;
+    border: 2px solid transparent;
+    border-radius: 10px;
+    cursor: pointer;
+}
+
+.pelucias img:hover {
+    transform: scale(1.1);
+    border: 2px solid #FF3131;
+}
+
+.pelucias img.selecionada {
+    border: 2px solid #FF3131;
+}
+
+/* FEEDBACK */
+.feedback-container {
+    background: #f6f7f8;
+    padding: 50px 20px;
+    text-align: center;
+}
+
+.feedback-texto {
+    font-family: "Stencil Std", fantasy;
+    color: #000;
+    font-size: 40px;
+    margin-bottom: 25px;
+}
+
+/* CARD DE VÍDEO */
+.card-video {
+    background-image: url(https://as2.ftcdn.net/jpg/02/58/69/81/1000_F_258698167_rPausS45PIUX71fDDXEYOHAO2WgGrhcZ.jpg);
+    background-size: cover;
+    background-position: center;
+    padding: 20px;
+    text-align: center;
+}
+
+.card-video video {
+    width: 180px; /* diminua aqui se quiser menor */
+    height: auto;
+    border-radius: 10px;
+}
+
+.btn-equipes {
+    display: inline-block;
+    padding: 12px 24px;
+    background-color: #ff9800;
+    color: white;
+    text-decoration: none;
+    border-radius: 8px;
+    font-weight: bold;
+    transition: 0.3s;
+}
+
+.btn-equipes:hover {
+    background-color: #e68900;
+    transform: scale(1.05);
+}
+
+.add-to-cart-btn{
+    background-color: #d1d3dd;
+}
